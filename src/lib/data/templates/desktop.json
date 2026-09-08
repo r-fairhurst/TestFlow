@@ -1,0 +1,18 @@
+{
+    "name": "desktop pentest checklist",
+    "version": 0.1,
+    "description": "A checklist for desktop penetration testing.",
+    "tasks": [
+        {
+            "id": "run_sigcheck",
+            "name": "Run SigCheck",
+            "description": "./sigcheck64.exe app.exe"
+        },
+        {
+            "id": "is_app_signed",
+            "name": "Is the application signed?",
+            "description": "that ain't good yo",
+            "dependencies": ["run_sigcheck"]
+        }
+    ]
+}
